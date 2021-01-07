@@ -1,5 +1,6 @@
 # DOCKER-H5AI
 
+**H5AI version: 0.29.2**
 ## RUN with a basic nginx configuration file
 
 
@@ -9,7 +10,7 @@ $ sudo docker run -d \
   -p 80:80 \
   -v $PWD:/var/www \
   -v $PWD/nginx_config_examples/basic_h5ai.nginx.conf:/etc/nginx/sites-enabled/h5.conf \
-  corfr/h5ai
+  waterjuice/h5ai
 ```
 
 ## HTTPS and PASSWORD
@@ -26,5 +27,5 @@ $ sudo docker run -d \
   -v $PWD/htpasswd:/mnt/config/htpasswd:ro \
   -v $PWD/ssl:/etc/nginx/ssl:ro \
   -v /home/marcel/media:/var/www \
-  corfr/h5ai
+  waterjuice/h5ai
 ```
